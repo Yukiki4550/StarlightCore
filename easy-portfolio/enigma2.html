@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="enigmas.css">
+
+</head>
+
+<body>
+
+    <video src="video/videoenigma.mp4" width="400" controls>
+
+    <h1> vai precisar.💜​</h1>
+
+
+    <input type="text" id="resposta" placeholder="Digite sua resposta">
+    <button onclick="verificarResposta()">Enviar</button>
+    <p id="mensagem"></p>
+
+
+    <script>
+        function verificarResposta() {
+            let respostaCorreta = "outalveznão"; 
+            let respostaUsuario = document.getElementById("resposta").value.trim().toLowerCase();
+            let mensagem = document.getElementById("mensagem");
+
+            if (respostaUsuario === respostaCorreta) {
+                window.location.href = "enigma3.html"; 
+            } else {
+                mensagem.textContent = "Resposta incorreta!";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

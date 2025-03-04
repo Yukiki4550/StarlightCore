@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>???</title>
+    <link rel="stylesheet" href="enigmas.css">
+  
+
+</head>
+
+<body>
+
+    <img src="img/WhatsApp Image 2025-03-03 at 16.41.58 (1).jpeg" alt="">
+
+    <h1> etros aob, vai precisar.💜​</h1>
+
+    <input type="text" id="resposta" placeholder="Digite sua resposta">
+    <button onclick="verificarResposta()">Enviar</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function verificarResposta() {
+            let enigma1 = "ailha"; 
+            let enigma2 = "tohell";
+            let respostaUsuario = document.getElementById("resposta").value.trim().toLowerCase();
+            let mensagem = document.getElementById("mensagem");
+
+            if (respostaUsuario === enigma1) {
+                window.location.href = "enigma2.html"; 
+            } 
+            if (respostaUsuario === enigma2) {
+                window.location.href = "hell.html"
+            }
+            else {
+                mensagem.textContent = "Resposta incorreta!";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
